@@ -1,0 +1,147 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h2, h3 {
+    color: #505861;
+    font-size: 24px;
+}
+
+p {
+    font-size: 17px;
+    color: #3d3d3d;
+    line-height: 24px;
+    text-align: justify;
+}
+footer {
+    padding: 3px;
+    color: white;
+    background-color: #2D3E50;
+    text-align: center;
+    font-weight: bold;
+}
+
+footer p {
+    color: rgba(255, 255, 255, 0.941);
+    text-align: center;
+}
+
+nav a{
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover {
+    font-weight: bold;
+}
+
+.profile header {
+    text-align: center;
+}
+
+.featured-image {
+    width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.profile img {
+    width: 180px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.profile.card p {
+    text-align: center;
+}
+
+.profile.card h4 {
+    text-align: center;
+    color: #3d3d3d;
+}
+
+.profile.card th, td, a {
+    text-align: justify;
+    text-decoration: none;
+    color: #3d3d3d;
+}
+
+.profile.card a:hover {
+    font-weight: bold;
+}
+
+.jumbotron {
+    font-size: 20px;
+    padding: 60px;
+    background-color: rgb(45, 62, 80);
+    text-align: center;
+    color: white;
+}
+
+nav ul {
+    padding-inline: 4rem;
+    display: flex;
+    gap: 2rem;
+}
+
+nav li {
+    list-style-type: none;
+}
+
+nav {
+    background-color: #44596e;
+    padding: 5px;
+    position: sticky;
+    top: 07
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    gap: 1.5rem;
+}
+
+#content {
+    flex: 5;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+aside {
+    flex: 1;
+}
+
+header {
+    display: inline;
+}
+
+@media screen and (max-width: 1000px) {
+    main {
+        flex-flow: column nowrap;
+    }
+    main aside {
+        align-self: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    nav ul {
+        justify-content: center;
+    }
+    main aside {
+        align-self: stretch;
+    }
+}
